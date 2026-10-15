@@ -9,7 +9,7 @@ public class CalculadoraDeSalario {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         double salario,desconto,porcentagem;
-        double bonusdemeta = 500;
+        double bonusDeMeta = 500;
         String nome = " ";
 
 
@@ -24,13 +24,13 @@ public class CalculadoraDeSalario {
         porcentagem = input.nextDouble();
 
         desconto = porcentagem/100;
-        double salarioLiquido = salario - (salario * desconto) + bonusdemeta;
+        double salarioLiquido = salario - (salario * desconto) + bonusDeMeta;
 
         System.out.println("\n--- RESUMO DO CONTRACHEQUE ---");
         System.out.println("Funcionário: " + nome);
         System.out.println("Salário Bruto: R$ " + salario);
         System.out.println("Desconto: " + porcentagem + "% (R$ " + (salario * desconto) + ")");
-        System.out.println("Bônus de Meta: R$ " + bonusdemeta);
+        System.out.println("Bônus de Meta: R$ " + bonusDeMeta);
         System.out.println("Salário Líquido Final: R$ " + salarioLiquido);
 
         input.close();
