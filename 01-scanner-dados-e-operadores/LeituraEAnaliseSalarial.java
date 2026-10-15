@@ -28,5 +28,7 @@ public class LeituraEAnaliseSalarial {
         System.out.println("Salário Atual: R$ " + salarioatual);
         System.out.println("Aumento Concedido: R$ " + aumento);
         System.out.println("Novo Salário Final: R$ " + salariofinal);
+
+        input.close();
     }
 }
